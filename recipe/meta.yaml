@@ -32,6 +32,8 @@ requirements:
     - jinja2
     - cytoolz
     - toolz
+    - geopandas
+    - scikit-image
 
 test:
   imports:
