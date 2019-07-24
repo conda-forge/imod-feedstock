@@ -1,5 +1,5 @@
 {% set name = "imod" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 99f1afed333387fd29d4d40fdb60409460536d337f4fcb20d1d8cd215d46f077
+  sha256: fc51ce7305d3d1e6d0675ce652d1af8ac7423e8c88963f2caeefe92db2c5177d
 
 build:
   number: 0
@@ -32,6 +32,8 @@ requirements:
     - jinja2
     - cytoolz
     - toolz
+    - geopandas
+    - scikit-image
 
 test:
   imports:
