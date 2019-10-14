@@ -34,6 +34,7 @@ requirements:
     - toolz
     - geopandas
     - scikit-image
+    - matplotlib
 
 test:
   imports:
@@ -51,7 +52,7 @@ about:
     working with groundwater models from Python. It does this by supporting reading and
     writing of the different iMOD file formats to existing objects often used in Python
     data processing.
-  doc_url: https://deltares.gitlab.io/imod/imod-python/
+  doc_url: https://imod.xyz/
   dev_url: https://gitlab.com/deltares/imod/imod-python
 
 extra:
