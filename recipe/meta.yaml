@@ -10,7 +10,7 @@ source:
   sha256: c2b904f7998ac2c778715d1e98a001391398ef5872df3a7633b42a89c4b34a35
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -35,7 +35,7 @@ requirements:
     - toolz
     - geopandas
     - scikit-image
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
