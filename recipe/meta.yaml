@@ -20,6 +20,7 @@ requirements:
     - pip
     - setuptools_scm
   run:
+    - python >=3.6
     - affine
     - bottleneck
     - cftime >=1
