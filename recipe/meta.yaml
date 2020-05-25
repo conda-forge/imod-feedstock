@@ -1,5 +1,5 @@
 {% set name = "imod" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c2b904f7998ac2c778715d1e98a001391398ef5872df3a7633b42a89c4b34a35
+  sha256: d30bd5224c0351287b6f374a4b55a4aea70657347d92beb71769616330606051
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -21,21 +21,25 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6
-    - rasterio >=1.0
-    - numpy
-    - numba
-    - scipy
-    - xarray >=0.11
-    - cftime >=1.0
-    - pandas
-    - dask
     - affine
-    - jinja2
+    - bottleneck
+    - cftime >=1
     - cytoolz
-    - toolz
+    - dask
     - geopandas
-    - scikit-image
+    - jinja2
+    - joblib
     - matplotlib-base
+    - numba
+    - numpy
+    - pandas
+    - pyvista
+    - rasterio >=1.0
+    - scipy
+    - toolz
+    - tqdm
+    - vtk
+    - xarray >=0.15
 
 test:
   imports:
@@ -46,7 +50,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Work with iMOD MODFLOW models'
+  summary: Work with iMOD MODFLOW models
 
   description: |
     The imod Python package is an addition to iMOD and iMODFLOW, intended to facilitate
