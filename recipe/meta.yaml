@@ -21,7 +21,7 @@ requirements:
   run:
     - affine
     - bottleneck
-    - cftime>=1
+    - cftime >=1
     - cytoolz
     - dask
     - geopandas
@@ -31,14 +31,13 @@ requirements:
     - numba
     - numpy
     - pandas
-    - python>=3.6
     - pyvista
-    - rasterio>=1.0
+    - rasterio >=1.0
     - scipy
     - toolz
     - tqdm
     - vtk
-    - xarray>=0.15
+    - xarray >=0.15
 
 test:
   imports:
