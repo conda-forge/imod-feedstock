@@ -21,21 +21,25 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6
-    - rasterio >=1.0
-    - numpy
-    - numba
-    - scipy
-    - xarray >=0.11
-    - cftime >=1.0
-    - pandas
-    - dask
     - affine
-    - jinja2
+    - bottleneck
+    - cftime >=1
     - cytoolz
-    - toolz
+    - dask
     - geopandas
-    - scikit-image
+    - jinja2
+    - joblib
     - matplotlib-base
+    - numba
+    - numpy
+    - pandas
+    - pyvista
+    - rasterio >=1.0
+    - scipy
+    - toolz
+    - tqdm
+    - vtk
+    - xarray >=0.15
 
 test:
   imports:
