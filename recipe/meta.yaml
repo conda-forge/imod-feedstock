@@ -1,5 +1,5 @@
 {% set name = "imod" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d30bd5224c0351287b6f374a4b55a4aea70657347d92beb71769616330606051
+  sha256: 90884e9a1bd79099f94ca967f0b77d5eaaa5bb9ff4f82f3a1fcf71ba6c85e3a3
 
 build:
   number: 0
@@ -33,9 +33,11 @@ requirements:
     - numba
     - numpy
     - pandas
+    - python-dateutil
     - pyvista
     - rasterio >=1.0
     - scipy
+    - shapely
     - toolz
     - tqdm
     - vtk
