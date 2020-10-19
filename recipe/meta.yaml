@@ -33,9 +33,11 @@ requirements:
     - numba
     - numpy
     - pandas
+    - python-dateutil
     - pyvista
     - rasterio >=1.0
     - scipy
+    - shapely
     - toolz
     - tqdm
     - vtk
