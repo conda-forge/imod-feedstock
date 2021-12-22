@@ -16,32 +16,41 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.7
     - affine
     - bottleneck
     - cftime >=1
+    - contextily >=1
     - cytoolz
     - dask
+    - declxml
     - geopandas
+    - graphviz
+    - python-graphviz
     - jinja2
-    - joblib
     - matplotlib-base
-    - numba
+    - meshzoo
+    - numba >=0.50
+    - numba-celltree
     - numpy
     - pandas
+    - pooch
     - python-dateutil
+    - pygeos
     - pyvista
     - rasterio >=1.0
     - scipy
     - shapely
     - toolz
     - tqdm
-    - vtk
+    - vtk >=9.0
     - xarray >=0.15
+    - xugrid
+    - zarr
 
 test:
   imports:
