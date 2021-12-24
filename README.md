@@ -11,12 +11,12 @@ Summary: Work with iMOD MODFLOW models
 
 Development: https://gitlab.com/deltares/imod/imod-python
 
-Documentation: https://imod.xyz/
+Documentation: https://deltares.gitlab.io/imod/imod-python/
 
-The imod Python package is an addition to iMOD and iMODFLOW, intended to facilitate
-working with groundwater models from Python. It does this by supporting reading and
-writing of the different iMOD file formats to existing objects often used in Python
-data processing.
+The imod Python package is an open source project to make working with
+MODFLOW groundwater models in Python easier. It builds on top of popular
+packages such as xarray, pandas, geopandas, dask,  and rasterio to provide
+a versatile toolset for working with (large) groundwater (modeling) data.
 
 
 Current build status
