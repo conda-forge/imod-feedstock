@@ -16,32 +16,40 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.7
     - affine
     - bottleneck
-    - cftime >=1
+    - cftime >=1.0
+    - contextily >=1.0
     - cytoolz
     - dask
     - geopandas
+    - graphviz
     - jinja2
-    - joblib
     - matplotlib-base
-    - numba
+    - meshzoo
+    - numba >=0.50
     - numpy
     - pandas
+    - pooch
+    - pygeos
     - python-dateutil
+    - python-graphviz
     - pyvista
     - rasterio >=1.0
     - scipy
+    - scooby <=0.5.7
     - shapely
     - toolz
     - tqdm
-    - vtk
+    - vtk >=9.0
     - xarray >=0.15
+    - xugrid
+    - zarr
 
 test:
   imports:
@@ -55,11 +63,11 @@ about:
   summary: Work with iMOD MODFLOW models
 
   description: |
-    The imod Python package is an addition to iMOD and iMODFLOW, intended to facilitate
-    working with groundwater models from Python. It does this by supporting reading and
-    writing of the different iMOD file formats to existing objects often used in Python
-    data processing.
-  doc_url: https://imod.xyz/
+    The imod Python package is an open source project to make working with
+    MODFLOW groundwater models in Python easier. It builds on top of popular
+    packages such as xarray, pandas, geopandas, dask,  and rasterio to provide
+    a versatile toolset for working with (large) groundwater (modeling) data.
+  doc_url: https://deltares.gitlab.io/imod/imod-python/
   dev_url: https://gitlab.com/deltares/imod/imod-python
 
 extra:
