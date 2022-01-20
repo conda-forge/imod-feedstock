@@ -32,6 +32,7 @@ requirements:
     - jinja2
     - matplotlib-base
     - meshzoo
+    - netcdf4
     - numba >=0.50
     - numpy
     - pandas
