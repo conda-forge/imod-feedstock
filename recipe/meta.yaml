@@ -43,7 +43,7 @@ requirements:
     - pyvista
     - rasterio >=1.0
     - scipy
-    - scooby <=0.5.7
+    - scooby
     - shapely
     - toolz
     - tqdm
