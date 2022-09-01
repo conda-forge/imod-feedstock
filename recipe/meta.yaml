@@ -73,5 +73,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - luitjansl
     - visr
     - Huite
