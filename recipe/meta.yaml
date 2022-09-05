@@ -49,7 +49,7 @@ requirements:
     - tqdm
     - vtk >=9.0
     - xarray >=0.15
-    - xugrid
+    - xugrid >=0.1.6
     - zarr
 
 test:
