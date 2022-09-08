@@ -45,6 +45,8 @@ requirements:
     - scipy
     - scooby
     - shapely
+    - tomli >=1.1.0
+    - tomli-w
     - toolz
     - tqdm
     - vtk >=9.0
