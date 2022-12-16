@@ -31,7 +31,6 @@ requirements:
     - graphviz
     - jinja2
     - matplotlib-base
-    - meshzoo
     - netcdf4
     - numba >=0.50
     - numpy
@@ -44,7 +43,7 @@ requirements:
     - rasterio >=1.0
     - scipy
     - scooby
-    - shapely
+    - shapely >=1.8
     - tomli >=1.1.0
     - tomli-w
     - toolz
