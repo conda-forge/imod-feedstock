@@ -1,11 +1,11 @@
-About imod
-==========
+About imod-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imod-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.com/deltares/imod/imod-python
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imod-feedstock/blob/main/LICENSE.txt)
 
 Summary: Work with iMOD MODFLOW models
 
