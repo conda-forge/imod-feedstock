@@ -20,7 +20,7 @@ requirements:
     - pip
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >=3.7, <3.11
     - affine
     - bottleneck
     - cftime >=1.0
@@ -34,23 +34,22 @@ requirements:
     - netcdf4
     - numba >=0.50
     - numpy
-    - pandas
+    - pandas<2.0  # TODO: unpin when newer xarray on conda-forge
     - pooch
-    - pygeos
     - python-dateutil
     - python-graphviz
     - pyvista
     - rasterio >=1.0
     - scipy
     - scooby
-    - shapely >=1.8
+    - shapely >=2.0
     - tomli >=1.1.0
     - tomli-w
     - toolz
     - tqdm
     - vtk >=9.0
     - xarray >=0.15
-    - xugrid >=0.1.6
+    - xugrid >=0.3.0
     - zarr
 
 test:
