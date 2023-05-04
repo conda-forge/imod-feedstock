@@ -34,7 +34,7 @@ requirements:
     - netcdf4
     - numba >=0.50
     - numpy
-    - pandas<2.0  # TODO: unpin when newer xarray on conda-forge
+    - pandas <2.0  # TODO: unpin when newer xarray on conda-forge
     - pooch
     - python-dateutil
     - python-graphviz
