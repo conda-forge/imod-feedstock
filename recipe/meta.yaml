@@ -27,6 +27,7 @@ requirements:
     - contextily >=1.0
     - cytoolz
     - dask
+    - fastcore
     - geopandas
     - graphviz
     - jinja2
