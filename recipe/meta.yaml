@@ -1,5 +1,5 @@
 {% set name = "imod" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b565d153415cf3a7c1ab38dd1fd013dfecf0eddd988d643bcd251522ae774a38
+  sha256: e0bd7123088ad624a2556e0f5c744a0e8fab6dd5f92a3a2da10ba8d0b78ce2c4
 
 build:
   number: 0
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >3.7
     - pip
     - setuptools_scm
   run:
-    - python >=3.7, <3.11
+    - python >3.7, <3.11
     - affine
     - bottleneck
     - cftime >=1.0
@@ -37,6 +37,7 @@ requirements:
     - numpy
     - pandas <2.0  # TODO: unpin when newer xarray on conda-forge
     - pooch
+    - pymetis
     - python-dateutil
     - python-graphviz
     - pyvista
