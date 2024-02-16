@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python >=3.10
+    - hatchling
     - pip
-    - setuptools_scm
   run:
     - python >=3.10
     - affine
@@ -35,7 +35,7 @@ requirements:
     - netcdf4
     - numba >=0.50
     - numpy
-    - pandas <2.0  # TODO: unpin when newer xarray on conda-forge
+    - pandas
     - pooch
     - pymetis
     - python-dateutil
@@ -50,7 +50,7 @@ requirements:
     - toolz
     - tqdm
     - vtk >=9.0
-    - xarray >=0.15
+    - xarray >=2023.04.0
     - xugrid >=0.6.3
     - zarr
 
