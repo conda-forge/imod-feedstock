@@ -31,6 +31,7 @@ requirements:
     - geopandas
     - graphviz
     - jinja2
+    - loguru
     - matplotlib-base
     - netcdf4
     - numba >=0.50
