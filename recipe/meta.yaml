@@ -52,7 +52,7 @@ requirements:
     - tqdm
     - vtk >=9.0
     - xarray >=2023.08.0
-    - xugrid >=0.6.3
+    - xugrid >=0.10.0
     - zarr
 
 test:
@@ -60,7 +60,7 @@ test:
     - imod
 
 about:
-  home: https://gitlab.com/deltares/imod/imod-python
+  home: https://github.com/Deltares/imod-python
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -71,8 +71,8 @@ about:
     MODFLOW groundwater models in Python easier. It builds on top of popular
     packages such as xarray, pandas, geopandas, dask,  and rasterio to provide
     a versatile toolset for working with (large) groundwater (modeling) data.
-  doc_url: https://deltares.gitlab.io/imod/imod-python/
-  dev_url: https://gitlab.com/deltares/imod/imod-python
+  doc_url: https://deltares.github.io/imod-python/
+  dev_url: https://github.com/Deltares/imod-python
 
 extra:
   recipe-maintainers:
