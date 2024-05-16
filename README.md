@@ -3,15 +3,15 @@ About imod-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imod-feedstock/blob/main/LICENSE.txt)
 
-Home: https://gitlab.com/deltares/imod/imod-python
+Home: https://github.com/Deltares/imod-python
 
 Package license: MIT
 
 Summary: Work with iMOD MODFLOW models
 
-Development: https://gitlab.com/deltares/imod/imod-python
+Development: https://github.com/Deltares/imod-python
 
-Documentation: https://deltares.gitlab.io/imod/imod-python/
+Documentation: https://deltares.github.io/imod-python/
 
 The imod Python package is an open source project to make working with
 MODFLOW groundwater models in Python easier. It builds on top of popular
