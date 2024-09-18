@@ -40,6 +40,7 @@ requirements:
     - numpy
     - pandas
     - pooch
+    - pydantic
     - pymetis
     - python-dateutil
     - python-graphviz
