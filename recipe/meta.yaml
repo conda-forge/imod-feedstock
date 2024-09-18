@@ -1,5 +1,5 @@
 {% set name = "imod" %}
-{% set version = "0.17.1" %}
+{% set version = "0.17.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4e8c98a3f72d76c9b4f2d173840dda62cfcca4a9946a3aa18cf8043342a27b22
+  sha256: aaa3a35c06153b49e5e319dfb7975247a23175378045861803e1b74f6ce4bb40
 
 build:
   number: 0
@@ -28,6 +28,8 @@ requirements:
     - cytoolz
     - dask
     - fastcore
+    - filelock
+    - gdal >=3.9.2
     - geopandas
     - graphviz
     - jinja2
@@ -38,6 +40,7 @@ requirements:
     - numpy
     - pandas
     - pooch
+    - pydantic
     - pymetis
     - python-dateutil
     - python-graphviz
