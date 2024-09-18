@@ -28,6 +28,8 @@ requirements:
     - cytoolz
     - dask
     - fastcore
+    - filelock
+    - gdal >=3.9.2
     - geopandas
     - graphviz
     - jinja2
