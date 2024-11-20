@@ -156,6 +156,7 @@ Feedstock Maintainers
 * [@Huite](https://github.com/Huite/)
 * [@JoerivanEngelen](https://github.com/JoerivanEngelen/)
 * [@Manangka](https://github.com/Manangka/)
+* [@deltares-service-account](https://github.com/deltares-service-account/)
 * [@luitjansl](https://github.com/luitjansl/)
 * [@visr](https://github.com/visr/)
 
