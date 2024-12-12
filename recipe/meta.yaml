@@ -10,7 +10,7 @@ source:
   sha256: bd5770b3f980965888b6f502a9c6d4edc7a2ab595c8bc2e572221df807d6c162
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,7 @@ requirements:
     - hatchling
     - pip
   run:
-    - python >=3.10
+    - python >=3.10,<3.13.0a0
     - affine
     - bottleneck
     - cftime >=1.0
@@ -54,7 +54,7 @@ requirements:
     - toolz
     - tqdm
     - vtk >=9.0
-    - xarray >=2023.08.0
+    - xarray >=2023.08.0,<2024.10.0a0
     - xugrid >=0.11.0
     - zarr
 
