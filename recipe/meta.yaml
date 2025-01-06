@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "imod" %}
 {% set version = "0.18.1" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: bd5770b3f980965888b6f502a9c6d4edc7a2ab595c8bc2e572221df807d6c162
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.10,<3.13.0a0
+    - python >={{ python_min }},<3.13.0a0
     - affine
     - bottleneck
     - cftime >=1.0
@@ -59,6 +60,8 @@ requirements:
     - zarr
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - imod
 
