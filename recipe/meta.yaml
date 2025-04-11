@@ -10,7 +10,7 @@ source:
   sha256: bd5770b3f980965888b6f502a9c6d4edc7a2ab595c8bc2e572221df807d6c162
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,7 +27,7 @@ requirements:
     - contextily >=1.0
     - cytoolz
     - dask
-    - fastcore
+    - fastcore <=1.7.20
     - filelock
     - gdal >=3.9.2
     - geopandas
