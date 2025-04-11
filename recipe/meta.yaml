@@ -28,7 +28,7 @@ requirements:
     - contextily >=1.0
     - cytoolz
     - dask
-    - fastcore
+    - fastcore <=1.7.20
     - filelock
     - gdal >=3.9.2
     - geopandas
