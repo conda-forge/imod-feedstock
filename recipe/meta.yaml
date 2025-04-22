@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "imod" %}
-{% set version = "1.0.0rc2" %}
+{% set version = "1.0.0rc3" %}
 
 package:
   name: {{ name|lower }}
@@ -28,7 +28,6 @@ requirements:
     - contextily >=1.0
     - cytoolz
     - dask
-    - fastcore <=1.7.20
     - filelock
     - gdal >=3.9.2
     - geopandas
@@ -40,6 +39,7 @@ requirements:
     - numba >=0.50
     - numpy
     - pandas
+    - plum-dispatch = "*"
     - pooch
     - pydantic
     - pymetis
