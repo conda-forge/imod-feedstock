@@ -1,5 +1,6 @@
+{% set python_min = '3.10' %}
 {% set name = "imod" %}
-{% set version = "1.0.0rc2" %}
+{% set version = "1.0.0rc3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +8,16 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 19d39dc1b4a327afe07c17a2eca8076a4c41c66b1a2c980ee57078fdf916be96
+  sha256: dd4f2cbf7c01c4a7efd5d869b548accf7c85cb3ef3240126cccb31ed6658b31f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
@@ -27,7 +28,6 @@ requirements:
     - contextily >=1.0
     - cytoolz
     - dask
-    - fastcore <=1.7.20
     - filelock
     - gdal >=3.9.2
     - geopandas
@@ -39,6 +39,7 @@ requirements:
     - numba >=0.50
     - numpy
     - pandas
+    - plum-dispatch
     - pooch
     - pydantic
     - pymetis
@@ -59,6 +60,8 @@ requirements:
     - zarr
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - imod
 
