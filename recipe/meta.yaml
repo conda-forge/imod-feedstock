@@ -39,7 +39,7 @@ requirements:
     - numba >=0.50
     - numpy
     - pandas
-    - plum-dispatch = "*"
+    - plum-dispatch
     - pooch
     - pydantic
     - pymetis
