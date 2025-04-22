@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "imod" %}
 {% set version = "1.0.0rc2" %}
 
@@ -10,13 +11,13 @@ source:
   sha256: 19d39dc1b4a327afe07c17a2eca8076a4c41c66b1a2c980ee57078fdf916be96
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
@@ -59,6 +60,8 @@ requirements:
     - zarr
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - imod
 
