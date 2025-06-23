@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = '3.11' %}
 {% set name = "imod" %}
-{% set version = "1.0.0rc3" %}
+{% set version = "1.0.0rc4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dd4f2cbf7c01c4a7efd5d869b548accf7c85cb3ef3240126cccb31ed6658b31f
+  sha256: a537aaefbde962664051e8c59c0798ec857759f614e0ebecb173fdf03d9103f7
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - hatchling
     - pip
   run:
-    - python >=3.10,<3.14.0a0
+    - python >=3.11,<3.14.0a0
     - affine
     - bottleneck
     - cftime >=1.0
