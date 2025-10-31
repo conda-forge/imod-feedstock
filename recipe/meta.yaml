@@ -1,6 +1,6 @@
 {% set python_min = '3.11' %}
 {% set name = "imod" %}
-{% set version = "1.0.0rc5" %}
+{% set version = "1.0.0rc7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 36ff74773d98281d1a41ce7dbd94df9f5f710aceeac98cc20921f89fb62d933f
+  sha256: 5d82f6ccf8975493b9f981d8e7cacf010db0dbff3100d97df8ea5dd98d6f5ae1
 
 build:
   number: 0
