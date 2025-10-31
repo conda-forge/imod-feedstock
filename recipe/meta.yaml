@@ -82,9 +82,8 @@ about:
 
 extra:
   recipe-maintainers:
-    - deltares-service-account
+    - FMSST
     - Manangka
-    - luitjansl
     - JoerivanEngelen
     - visr
     - Huite
