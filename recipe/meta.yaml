@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "imod" %}
 {% set version = "1.0.0.post1" %}
 
@@ -21,14 +21,13 @@ requirements:
     - hatchling
     - pip
   run:
-    - python >={{ python_min }},<3.13.0a0
+    - python >=3.11,<3.14.0a0
     - affine
     - bottleneck
     - cftime >=1.0
     - contextily >=1.0
     - cytoolz
     - dask
-    - fastcore <=1.7.20
     - filelock
     - gdal >=3.9.2
     - geopandas
@@ -40,6 +39,7 @@ requirements:
     - numba >=0.50
     - numpy
     - pandas
+    - plum-dispatch
     - pooch
     - pydantic
     - pymetis
@@ -55,8 +55,8 @@ requirements:
     - toolz
     - tqdm
     - vtk >=9.0
-    - xarray >=2023.08.0,<2024.10.0a0
-    - xugrid >=0.11.0
+    - xarray >2025.04.0
+    - xugrid >=0.14.2
     - zarr
 
 test:
