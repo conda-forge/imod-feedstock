@@ -21,7 +21,7 @@ requirements:
     - hatchling
     - pip
   run:
-    - python >=3.11,<3.14.0a0
+    - python >={{ python_min }}
     - affine
     - bottleneck
     - cftime >=1.0
