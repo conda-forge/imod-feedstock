@@ -55,7 +55,7 @@ requirements:
     - toolz
     - tqdm
     - vtk >=9.0
-    - xarray >2025.04.0
+    - xarray >=2023.08.0,!=2025.04.0 
     - xugrid >=0.14.2
     - zarr
 
