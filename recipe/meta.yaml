@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.11" %}
 {% set name = "imod" %}
-{% set version = "0.18.1" %}
+{% set version = "1.0.0.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bd5770b3f980965888b6f502a9c6d4edc7a2ab595c8bc2e572221df807d6c162
+  sha256: 14415c7a569f280f416ee5ad59edb48eb2d3fb6f87a6a4bde2f84e2ca28ab2f1
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,14 +21,13 @@ requirements:
     - hatchling
     - pip
   run:
-    - python >={{ python_min }},<3.13.0a0
+    - python >={{ python_min }}
     - affine
     - bottleneck
     - cftime >=1.0
     - contextily >=1.0
     - cytoolz
     - dask
-    - fastcore <=1.7.20
     - filelock
     - gdal >=3.9.2
     - geopandas
@@ -40,6 +39,7 @@ requirements:
     - numba >=0.50
     - numpy
     - pandas
+    - plum-dispatch
     - pooch
     - pydantic
     - pymetis
@@ -55,8 +55,8 @@ requirements:
     - toolz
     - tqdm
     - vtk >=9.0
-    - xarray >=2023.08.0,<2024.10.0a0
-    - xugrid >=0.11.0
+    - xarray >=2023.08.0,!=2025.04.0 
+    - xugrid >=0.14.2
     - zarr
 
 test:
