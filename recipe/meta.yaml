@@ -1,14 +1,14 @@
 {% set python_min = "3.12" %}
 {% set name = "imod" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 547bba732ec2dab902a4ff6f8d3d3d9759c1418bab3640e7a48cdb080a76bece
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b1d81494b461f66b1ba6929ff5fdbfaa1cce272f88a017aeab36425a19312144
 
 build:
   number: 0
