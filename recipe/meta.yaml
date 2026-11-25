@@ -25,6 +25,7 @@ requirements:
     - affine
     - bottleneck
     - cftime >=1.0
+    - certifi >=2026.10.19
     - contextily >=1.0
     - cytoolz
     - dask
@@ -38,7 +39,7 @@ requirements:
     - netcdf4
     - numba >=0.50
     - numpy
-    - pandas
+    - pandas >=3
     - plum-dispatch
     - pooch
     - pydantic
